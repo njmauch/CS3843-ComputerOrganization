@@ -1,0 +1,42 @@
+    >>> * p4Input.txt
+    >>> COUNT ASTROS,S
+        count 'ASTROS' with 'S', returned 2
+    >>> COUNT ASTROS,B
+        count 'ASTROS' with 'B', returned 0
+    >>> COUNT MISSISSIPPI,S
+        count 'MISSISSIPPI' with 'S', returned 4
+    >>> *
+    >>> * test countAny3
+    >>> *
+    >>> COUNTANY3 HAPPYDAYS,PYS
+        countAny3 'HAPPYDAYS' with 'PYS', returned 5
+    >>> COUNTANY3 ROADRUNNER,RUN
+        countAny3 'ROADRUNNER' with 'RUN', returned 6
+    >>> *
+    >>> * test substr
+    >>> *
+    >>> SUBSTR mickey,1,4
+        substr 'mickey', beg=1, end=4, returned 'ick' with length=3
+    >>> SUBSTR mickey,1,20
+        substr 'mickey', beg=1, end=20, returned 'ickey' with length=5
+    >>> SUBSTR mickey,-5,4
+        substr 'mickey', beg=-5, end=4, returned '' with length=0
+    >>> SUBSTR mickey,4,4
+        substr 'mickey', beg=4, end=4, returned '' with length=0
+    >>> SUBSTR mississippi,3,6
+        substr 'mississippi', beg=3, end=6, returned 'sis' with length=3
+    >>> SUBSTR mississippi,3,12
+        substr 'mississippi', beg=3, end=12, returned 'sissippi' with length=8
+    >>> *
+    >>> * Test verify 
+    >>> *
+    >>> VERIFY abc,cash
+        verify 'abc' with 'cash', returned address of 'b'
+    >>> VERIFY catch,abcdhijstr
+        verify 'catch' with 'abcdhijstr', returned valid
+    >>> VERIFY donkey,abcdhijstr
+        verify 'donkey' with 'abcdhijstr', returned address of 'o'
+    >>> VERIFY astros,worldserieschamps
+        verify 'astros' with 'worldserieschamps', returned address of 't'
+    >>> VERIFY nationals,worldserieschamps
+        verify 'nationals' with 'worldserieschamps', returned address of 'n'

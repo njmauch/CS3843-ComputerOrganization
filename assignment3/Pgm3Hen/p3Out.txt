@@ -1,0 +1,61 @@
+STUDENT 111111 40 70 60 20 80 90 100 90 0 80
+Reg Dump at instruction 080489E9
+EAX      EBX      ECX      EDX      ESI      EDI      EBP      ESP
+00000028 00000000 00000050 00000046 0000005A 00000064 BFFFF668 BFFFF664
+Reg Dump at instruction 080489F1
+EAX      EBX      ECX      EDX      ESI      EDI      EBP      ESP
+00000028 00000000 00000050 00000046 0000005A 00000064 BFFFF668 BFFFF650
+HEXDUMP at 0xbffff668
+   0000 . . . .  } . . .  ( . . .  
+        F8F6FFBF 7D870408 28000000 
+   000C F . . .  < . . .  . . . .  
+        46000000 3C000000 14000000 
+   0018 P . . .  Z . . .  d . . .  
+        50000000 5A000000 64000000 
+   0024 Z . . .  . . . .  P . . .  
+        5A000000 00000000 50000000 
+   0030 . . . .  P . . .  . . . .  
+        00000000 50000000 00000000 
+   003C thru 003F (1 lines) suppressed - all zero
+    Total = 840
+STUDENT 222222 50 60 60 90 100 90 70 90 90 90
+Reg Dump at instruction 080489E9
+EAX      EBX      ECX      EDX      ESI      EDI      EBP      ESP
+00000032 0000005A 0000005A 0000003C 0000005A 00000046 BFFFF668 BFFFF664
+Reg Dump at instruction 080489F1
+EAX      EBX      ECX      EDX      ESI      EDI      EBP      ESP
+00000032 0000005A 0000005A 0000003C 0000005A 00000046 BFFFF668 BFFFF650
+HEXDUMP at 0xbffff668
+   0000 . . . .  } . . .  2 . . .  
+        F8F6FFBF 7D870408 32000000 
+   000C < . . .  < . . .  Z . . .  
+        3C000000 3C000000 5A000000 
+   0018 d . . .  Z . . .  F . . .  
+        64000000 5A000000 46000000 
+   0024 Z . . .  Z . . .  Z . . .  
+        5A000000 5A000000 5A000000 
+   0030 Z . . .  Z . . .  . . . .  
+        5A000000 5A000000 00000000 
+   003C thru 003F (1 lines) suppressed - all zero
+    Total = 900
+STUDENT 333333 40 70 70 0 90 90 100 0 95 99
+Reg Dump at instruction 080489E9
+EAX      EBX      ECX      EDX      ESI      EDI      EBP      ESP
+00000028 0000005F 00000063 00000046 00000000 00000064 BFFFF668 BFFFF664
+Reg Dump at instruction 080489F1
+EAX      EBX      ECX      EDX      ESI      EDI      EBP      ESP
+00000028 0000005F 00000063 00000046 00000000 00000064 BFFFF668 BFFFF650
+HEXDUMP at 0xbffff668
+   0000 . . . .  } . . .  ( . . .  
+        F8F6FFBF 7D870408 28000000 
+   000C F . . .  F . . .  . . . .  
+        46000000 46000000 00000000 
+   0018 Z . . .  Z . . .  d . . .  
+        5A000000 5A000000 64000000 
+   0024 . . . .  _ . . .  c . . .  
+        00000000 5F000000 63000000 
+   0030 _ . . .  c . . .  . . . .  
+        5F000000 63000000 00000000 
+   003C thru 003F (1 lines) suppressed - all zero
+    Total = 956
+DONE

@@ -1,0 +1,29 @@
+* p4Input.txt
+COUNT ASTROS,S
+COUNT ASTROS,B
+COUNT MISSISSIPPI,S
+*
+* test countAny3
+*
+COUNTANY3 HAPPYDAYS,PYS
+COUNTANY3 ROADRUNNER,RUN
+*
+* test substr
+*
+SUBSTR mickey,1,4
+SUBSTR mickey,1,20
+SUBSTR mickey,-5,4
+SUBSTR mickey,4,4
+SUBSTR mississippi,3,6
+SUBSTR mississippi,3,12
+*
+* Test verify 
+*
+VERIFY abc,cash
+VERIFY catch,abcdhijstr
+VERIFY donkey,abcdhijstr
+VERIFY astros,worldserieschamps
+VERIFY nationals,worldserieschamps
+
+
+

@@ -1,0 +1,6 @@
+﻿  cs3843.c
+c:\users\njmau\source\repos\cs3843p2\cs3843p2\cs3843.c(144): warning C4018: '>': signed/unsigned mismatch
+c:\users\njmau\source\repos\cs3843p2\cs3843p2\cs3843.c(249): warning C4018: '>': signed/unsigned mismatch
+c:\users\njmau\source\repos\cs3843p2\cs3843p2\cs3843.c(284): warning C4013: 'rotateRight' undefined; assuming extern returning int
+c:\users\njmau\source\repos\cs3843p2\cs3843p2\cs3843.c(425): warning C4142: 'rotateRight': benign redefinition of type
+c:\users\njmau\source\repos\cs3843p2\cs3843p2\cs3843.c(317): error C4700: uninitialized local variable 'iInBufferLgthOrig' used

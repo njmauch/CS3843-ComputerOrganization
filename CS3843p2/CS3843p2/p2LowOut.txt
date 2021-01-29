@@ -1,0 +1,11 @@
+PROGRAM 2 Output:
+*** Low Level Test
+>>> Testing character swap of every 4th character (0<->4, 5<->9, 10<->14, ...)
+    origStr="abcdefghijklmnopqrstuvwzyz Computer Science is the best major in the world.  We have fun! "
+    resStr="ebcdajghifolmnktqrspyvwzum CozrutepeSci ice ne thstbes omaj   inrwhe t.rldo  We  aveh un!f" CORRECT
+>>> Testing six bit left rotate of bits (not entire buffer)
+    Orig 4 bytes=B5DE1FAA
+    Res 4 bytes=7787EAAD CORRECT
+>>> Testing bit swap of every 4 bits in four bytes (not entire buffer)
+    Orig 4 bytes=B5DE1FAA
+    Res 4 bytes=97D6DBAA CORRECT

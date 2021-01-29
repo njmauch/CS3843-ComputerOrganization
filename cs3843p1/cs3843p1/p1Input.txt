@@ -1,0 +1,52 @@
+* cs3743p1 fa19 command data for hexDump execution
+BYTESPERLINE 20
+* Show just 1 customer record.  Notice the null bytes in the record.
+CUSTOMER 1
+CREC 0 petem@xyz.net,Pete Moss
+AREC 0 123 Boggy Lane,New Orleans,LA,70112
+END
+* Show 6 customer records, but only 0, 3, and 4 are populated
+CUSTOMER 6
+CREC 3 pcorn@abc.net,Pop Corn
+AREC 3 456 Kernel,San Antonio,TX,78210
+CREC 4 pennyl@xyz.net,Penny Loafer
+AREC 4 789 Walking St,Philadelphia,PA,19102
+END
+* Show just 1 Inventory record.  Notice the binary data in the stock qty and price.
+* Does the stock quantity start immediately after the stock number?
+INVENTORY 1
+IREC 0 SBB001 300 14.95 Snuggie Brown
+END
+* Show 10 Inventory records, but only 0, 4, and 9 are populated
+INVENTORY 10
+IREC 4 SBG002 400 14.95 Snuggie Green
+IREC 9 BOM001 20 29.95 Bass-O-Matic
+END
+* Change the bytes per line
+BYTESPERLINE 40
+* Show the same Inventory records
+INVENTORY 10
+END
+CUSTOMER 6
+END
+* Show 100 records, but it is sparsely populated.
+* Notice how the double values are occupying two items each.
+NUMERIC 100
+NREC 1 L 100
+NREC 2 L 200
+NREC 3 L 300
+NREC 4 L 400
+NREC 5 L 500
+NREC 10 F 100 
+NREC 11 F 200
+NREC 12 F 1.5
+NREC 13 F 1.6
+NREC 20 D 100
+NREC 22 D 200
+NREC 23 D 1.5
+NREC 24 D 1.6
+END
+* Show 300 records.  This will go beyond the boundary of the numerics array and show
+* information which happens to follow the numerics array.
+NUMERIC 300
+END
